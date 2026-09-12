@@ -3,9 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <link rel="icon" href="HTML.ICO.png" type="image/x-icon">
+    <title>Aprendendo listas</title>
+    <style>
+        dd {
+            margin-left: 0;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol type="1" start="1"> <!-- type="1" é o padrão, mas pode ser alterado para "A", "a", "I" ou "i" -->
+        <li>Acordar</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para o trabalho</li>
+        <li>Almoçar</li>
+        <li>Tomar café da tarde</li>
+        <li>Dormir</li>
+    </ol>
+    <h2>Listas não ordenadas</h2>
+    <ul type="disc"> <!-- type="disc" é o padrão, mas pode ser alterado para circle ou square -->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Requeijão</li>
+        <li>Manteiga</li>
+        <li>Bolo</li>
+        <li>Alface</li>
+        <li>Tomate</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+    <h2>Meus filmes favoritos</h2>
+    <ol>
+        <li type="I">Antigos/Top 3</li>
+        <ol type="a">
+            <li>A prova de fogo</li>
+            <li>Jogos vorazes</li>
+            <li>Capitão América</li>
+        </ol> 
+        <li type="I">Recentes/Top 3</li>
+        <ol type="a"> <!-- start="4" indica o número do primeiro item -->
+            <li>Interestelar</li>
+            <li>Matrix</li>
+            <li>Senhor dos Anéis</li>
+    </ol>
+    </ol>
+    <h2>Comidas favoritas</h2>
+    <ol>
+        <li type="I">Top 3</li>
+        <ul>
+            <li>Hamburger</li>
+            <li>Pizza</li>
+            <li>Lasanha</li>
+        </ul>
+        <li type="I">Top 3 Frutas</li>
+        <ul>
+            <li>Morango</li>
+            <li>Manga</li>
+            <li>Uva</li>
+        </ul>
+    </ol>
+    <h2>Lista de Definições</h2>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+            <dt>CSS</dt>
+            <dd>Linguagem de marcação para a criação do design de um site</dd>
+        </dl>
 </body>
 </html>
