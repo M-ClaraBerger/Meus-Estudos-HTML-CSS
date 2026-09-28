@@ -3,41 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
     <title>Vídeos de Cursos online</title>
 </head>
 <body>
     <h1 style="text-align: center; font-size: 50px;">Cursos Online Gratuitos</h1>
     <style>
-        .videos {
-            display: grid;
-            grid-template-columns: 380px 380px;
-            gap: 15px;
-            justify-content: center;
-            margin: 0 auto;
-        }
-        .videos iframe {
-            width: 380px;
-            height: 215px;
-        }
+        body {
+    background-color: #f3e8ff;
+}
+    .videos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        justify-items: center;
+        gap: 20px;
+        max-width: 820px;
+        margin: 0 auto;
+    }
+
+.videos img {
+    width: 380px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.videos img:hover {
+    transform: scale(1.05);
+}
     </style>
 
 <div class="videos">
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ejkb_YpuHWs?si=KMHgSnLavokeJe2i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-    </iframe>
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ptbk2af68e8?si=kOYjtwMJM1uBo6NK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-    </iframe>
-
-
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Mim6nnkdOto?si=B0QKC8C4a4m-c9Bp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-    </iframe>
-
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/S9uPNppGsGo?si=oV-ZmqfxCDHXRJ2m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-    </iframe>
-
+    <a href="curso1.html">
+        <img src="https://img.youtube.com/vi/Ejkb_YpuHWs/hqdefault.jpg" alt="Curso de HTML e CSS">
+    </a>
+    <a href="curso2.html">
+        <img src="https://img.youtube.com/vi/Ptbk2af68e8/hqdefault.jpg" alt="Curso de JavaScript">
+    </a>
+    <a href="curso3.html">
+        <img src="https://img.youtube.com/vi/Mim6nnkdOto/hqdefault.jpg" alt="Curso de Python POO">
+    </a>
+    <a href="curso4.html">
+        <img src="https://img.youtube.com/vi/S9uPNppGsGo/hqdefault.jpg" alt="Curso de Python">
+    </a>
 </div>
 
 </style>
